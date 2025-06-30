@@ -1,0 +1,15 @@
+[Unit]
+Description=Kanata Keyboard Remapper
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/kanata -c /etc/kanata/config.kbd
+WorkingDirectory=/home/raketa
+Restart=on-failure
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_SYS_RAWIO
+AmbientCapabilities=CAP_SYS_ADMIN CAP_SYS_RAWIO
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
