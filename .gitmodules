@@ -7,3 +7,6 @@
 [submodule "tmux_conf"]
 	path = tmux_conf
 	url = git@github.com:Sabir777/tmux_conf.git
+[submodule "Docker"]
+	path = Docker
+	url = git@github.com:Sabir777/Docker.git
