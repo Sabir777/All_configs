@@ -1,0 +1,8 @@
+configuration {
+    font: "DejaVu Sans Mono 26";
+    show-icons: true;
+}
+
+* {
+    font: "DejaVu Sans Mono 26";
+}

@@ -1,0 +1,9 @@
+Xft.dpi: 216
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+
+# В ~/.Xresources
+rofi.font: DejaVu Sans Mono 16
+rofi.dpi: 216
