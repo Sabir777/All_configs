@@ -1,0 +1,27 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps lsft rsft menu
+)
+
+(defvar
+  tap-time 100
+  hold-time 200
+)
+
+(defalias
+  lang (multi lalt lsft)
+  caps esc
+  menu rctrl
+)
+
+(defalias
+  lsft (tap-hold $tap-time $hold-time @lang lsft)
+  rsft (tap-hold $tap-time $hold-time @lang rsft)
+)
+
+(deflayer base
+  @caps @lsft @rsft @menu
+)
