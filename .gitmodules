@@ -10,3 +10,6 @@
 [submodule "Docker"]
 	path = Docker
 	url = git@github.com:Sabir777/Docker.git
+[submodule "3x-ui"]
+	path = 3x-ui
+	url = git@github.com:Sabir777/xui.git
