@@ -2,6 +2,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
+# Установка редактора по умолчанию
+export EDITOR=vim
+
 # Все плагины объявлены единым списком
 plugins=(
   git
@@ -17,4 +20,4 @@ source $ZSH/oh-my-zsh.sh
 ZVM_TERM="" # Для zsh-vi-mode
 
 # Добавление rust в переменную окружения при запуске оболочки
-[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+# [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
