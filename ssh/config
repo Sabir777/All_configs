@@ -6,3 +6,12 @@ Host nextcloud
     ConnectTimeout 10
     TCPKeepAlive yes
     Compression yes
+
+Host niderland
+    HostName 89.23.105.3
+    User krolik
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ConnectTimeout 10
+    TCPKeepAlive yes
+    Compression yes
