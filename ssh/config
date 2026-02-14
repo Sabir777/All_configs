@@ -15,3 +15,9 @@ Host niderland
     ConnectTimeout 10
     TCPKeepAlive yes
     Compression yes
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_github
+    IdentitiesOnly yes
