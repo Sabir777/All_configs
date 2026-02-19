@@ -13,3 +13,6 @@
 [submodule "3x-ui"]
 	path = 3x-ui
 	url = git@github.com:Sabir777/xui.git
+[submodule "AstroNvim"]
+	path = AstroNvim
+	url = git@github.com:Sabir777/AstroNvim.git
