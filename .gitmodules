@@ -13,3 +13,6 @@
 [submodule "AstroNvim"]
 	path = AstroNvim
 	url = git@github.com:Sabir777/AstroNvim.git
+[submodule "QWEN"]
+	path = QWEN
+	url = git@github.com:Sabir777/Qwen-settings.git
