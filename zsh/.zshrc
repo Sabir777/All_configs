@@ -20,7 +20,8 @@ source $ZSH/oh-my-zsh.sh
 ZVM_TERM="" # Для zsh-vi-mode
 
 # Добавление rust в переменную окружения при запуске оболочки
-# [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Для установки Node.js
 export NVM_DIR="$HOME/.nvm"
