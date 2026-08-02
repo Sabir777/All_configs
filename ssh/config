@@ -7,9 +7,21 @@ Host nextcloud
     TCPKeepAlive yes
     Compression yes
 
-Host niderland
-    HostName 89.23.105.3
-    User krolik
+Host lenovo
+    HostName 185.230.191.75
+    Port 2222
+    User sceleton
+    IdentityFile ~/.ssh/id_termux_barsik
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ConnectTimeout 10
+    TCPKeepAlive yes
+    Compression yes
+
+Host finland
+    HostName 185.230.191.75
+    User barsik
+    IdentityFile ~/.ssh/id_termux_barsik
     ServerAliveInterval 30
     ServerAliveCountMax 3
     ConnectTimeout 10
