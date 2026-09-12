@@ -29,6 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm use default --silent
 
-# Для nvim
+# Для vim
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+# Для nvim
+# export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
