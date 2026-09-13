@@ -7,29 +7,47 @@ Host nextcloud
     TCPKeepAlive yes
     Compression yes
 
+Host finland
+    HostName 185.230.191.75
+    User barsik
+    IdentityFile ~/.ssh/id_finland_barsik
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ConnectTimeout 10
+    TCPKeepAlive yes
+    Compression yes
+
 Host lenovo
     HostName 185.230.191.75
     Port 2222
     User sceleton
-    IdentityFile ~/.ssh/id_termux_barsik
+    IdentityFile ~/.ssh/id_finland_barsik
     ServerAliveInterval 30
     ServerAliveCountMax 3
     ConnectTimeout 10
     TCPKeepAlive yes
     Compression yes
 
-Host finland
+Host lenovo_postgres
     HostName 185.230.191.75
-    User barsik
-    IdentityFile ~/.ssh/id_termux_barsik
+    Port 2222
+    User sceleton
+    IdentityFile ~/.ssh/id_finland_barsik
     ServerAliveInterval 30
     ServerAliveCountMax 3
     ConnectTimeout 10
     TCPKeepAlive yes
     Compression yes
+    LocalForward 5433 localhost:5432
 
 Host github.com
     HostName github.com
     User git
-    IdentityFile ~/.ssh/id_github
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+Host github-sceleton
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_github_sceleton
     IdentitiesOnly yes
