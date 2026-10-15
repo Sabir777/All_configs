@@ -13,3 +13,6 @@
 [submodule "QWEN"]
 	path = QWEN
 	url = git@github.com:Sabir777/Qwen-settings.git
+[submodule "NeoVim"]
+	path = NeoVim
+	url = git@github.com:Sabir777/nvim.git
